@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CriptoMensaje Secreto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CriptoMensaje Secreto</h1>
+        <button id="btnAyuda" onclick="mostrarAyuda()">?</button>
+        <div id="mensajeAyuda">¡Bienvenido a CriptoMensaje Secreto! Aquí puedes encriptar y desencriptar tus mensajes utilizando una clave secreta. Ingresa un texto en el primer cuadro de texto, una clave en el segundo cuadro de texto, y luego puedes encriptar o desencriptar el texto. ¡Diviértete!</div>
+        <div class="row">
+            <div class="input-container">
+                <label for="texto">Texto:</label>
+                <textarea id="texto" placeholder="Ingresa tu texto aquí..."></textarea>
+            </div>
+            <div class="input-container">
+                <label for="clave">Clave:</label>
+                <input type="text" id="clave" placeholder="Clave de encriptación">
+            </div>
+            <div class="input-container">
+                <label for="texto-encriptado">Texto Encriptado:</label>
+                <textarea id="texto-encriptado" placeholder="El texto encriptado va aquí..."></textarea>
+            </div>
+        </div>
+        <button id="btnEncriptar">Encriptar</button>
+        <button id="btnDesencriptar">Desencriptar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
